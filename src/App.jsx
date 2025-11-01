@@ -1,9 +1,11 @@
 import "./App.css";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { Spotlight } from "@/components/ui/Spotlight";
 import MyDock from "./components/Mydock";
+
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Projects />
           <MyDock />
         </main>
       </div>
