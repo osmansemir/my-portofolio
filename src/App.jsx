@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import { Spotlight } from "@/components/ui/Spotlight";
 import MyDock from "./components/Mydock";
@@ -17,6 +18,7 @@ function App() {
         </div>
         <main className="relative max-w-xl mx-auto pb-3 px-5">
           <Hero />
+          <About />
           <MyDock />
         </main>
       </div>
