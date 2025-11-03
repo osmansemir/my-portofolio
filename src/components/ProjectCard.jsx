@@ -58,7 +58,7 @@ function ProjectCard({ project }) {
               {project.tech?.map((item) => (
                 <div
                   key={item}
-                  className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-700 text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
+                  className="inline-flex items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-700 text-foreground/80 hover:bg-gray-700/80 px-1 py-0 text-[10px]"
                 >
                   {item}
                 </div>
