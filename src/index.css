@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --animate-marquee: marquee var(--duration) infinite linear;
@@ -20,4 +21,14 @@
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+}
+
+@theme {
+  /* Base surfaces */
+  --color-background: oklch(0.12 0.01 260); /* ~ #020617 - deep navy/black */
+  --color-foreground: oklch(0.97 0.01 255); /* white surface (e.g. cards) */
+  --color-foreground-muted: oklch(0.97 0.01 255 / 0.6);
+
+  --color-muted: oklch(0.22 0.02 260); /* slightly lighter than bg */
+  --color-muted-foreground: oklch(0.75 0.02 260); /* dimmed text on muted bg */
 }
