@@ -19,7 +19,7 @@ function Skill({ skill }) {
 
 function Skills() {
   return (
-    <section className="w-full">
+    <section className="relative w-full">
       <SectionTitle>Skills and Teck Stack</SectionTitle>
       <div>
         <Marquee pauseOnHover className="[--duration:40s] overflow-x-hidden">
@@ -41,6 +41,8 @@ function Skills() {
             <Skill key={skill.name} skill={skill} />
           ))}
         </Marquee>
+        <div className="from-[#020617] pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+        <div className="from-[#020617] pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
       </div>
     </section>
   );
