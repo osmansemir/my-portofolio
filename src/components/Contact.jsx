@@ -33,7 +33,7 @@ function Contact() {
       <Button
         onClick={handleDownload}
         size="lg"
-        className="mt-4 cursor-pointer"
+        className="mt-4 text-foreground/90 cursor-pointer hover:bg-[#A42CD6]/90 bg-[#A42CD6]"
       >
         Download CV
       </Button>

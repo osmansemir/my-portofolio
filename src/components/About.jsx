@@ -2,10 +2,10 @@ import SectionTitle from "./SectionTitle";
 
 function About() {
   return (
-    <section className="relative text-white flex justify-center items-center py-10 z-30">
+    <section className="relative text-white flex justify-center items-center px-5 pb-10 z-30">
       <div>
         <SectionTitle>About</SectionTitle>
-        <div className="prose prose-invert text-white">
+        <div className="prose md:prose-lg md:text-center text-foreground-muted">
           <p className="">
             I’m Osman Semir, a self-taught full-stack web developer with a
             background in applied biology. I specialize in building efficient,

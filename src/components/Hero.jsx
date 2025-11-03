@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen relative flex justify-center items-center z-30 "
+      className="h-screen min-h-100 relative flex justify-center items-center z-30 "
     >
       <div>
         <h1 className="inline-block max-sm:mb-8 text-foreground text-5xl font-bold tracking-tighter md:text-7xl">
