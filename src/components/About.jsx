@@ -5,13 +5,21 @@ function About() {
     <section className="relative text-white flex justify-center items-center py-10 z-30">
       <div>
         <SectionTitle>About</SectionTitle>
-        <p>
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          officiis illo, quia, quibusdam natus cumque rerum quod quae lorem
-          ipsum lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias officiis illo, quia, quibusdam natus cumque rerum quod quae
-          lorem ipsum
-        </p>
+        <div className="prose prose-invert text-white">
+          <p className="">
+            I’m Osman Semir, a self-taught full-stack web developer with a
+            background in applied biology. I specialize in building efficient,
+            user-friendly applications using the MERN stack (MongoDB, Express,
+            React, and Node.js).
+          </p>
+          <p className="">
+            My experience in research and teaching has strengthened my
+            analytical thinking and problem-solving skills, which I now apply to
+            creating clean, functional, and well-structured web projects. I’m
+            passionate about continuous learning, improving my craft, and
+            turning complex ideas into simple, elegant digital solutions.
+          </p>
+        </div>
       </div>
     </section>
   );
