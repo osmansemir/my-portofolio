@@ -5,8 +5,19 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { Spotlight } from "@/components/ui/Spotlight";
 import MyDock from "./components/Mydock";
+import Contact from "./components/Contact";
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics once when app loads
+    ReactGA.initialize("G-H5F1B6HNVS");
+
+    // Track page views automatically
+    ReactGA.send("pageview");
+  }, []);
+
   return (
     <>
       <div className="min-h-screen w-full bg-[#020617] relative">
@@ -19,11 +30,12 @@ function App() {
             fill="white"
           />
         </div>
-        <main className="relative max-w-xl mx-auto pb-3 px-5">
+        <main className="relative text-foreground max-w-2xl mx-auto pb-3 px-5">
           <Hero />
           <About />
           <Skills />
           <Projects />
+          <Contact />
           <MyDock />
         </main>
       </div>
