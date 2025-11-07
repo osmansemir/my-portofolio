@@ -15,6 +15,7 @@ export const projects = [
       "Axios",
     ],
     source: "https://github.com/osmansemir/Mindvale_Blog_Frontend",
+    website: "https://mindvale-blog-frontend.vercel.app/",
   },
   {
     title: "Blog Platform Backend API",
