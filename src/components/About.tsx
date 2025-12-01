@@ -5,7 +5,7 @@ export default function About() {
     <section className="relative flex justify-center items-center px-5 pb-10 z-30">
       <div>
         <SectionTitle>About</SectionTitle>
-        <div className="prose md:prose-lg">
+        <div className="prose dark:prose-invert md:prose-lg">
           <p className="">
             I’m Osman Semir, a self-taught full-stack web developer with a
             background in applied biology. I specialize in building efficient,

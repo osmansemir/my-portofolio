@@ -3,11 +3,17 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Dock, DockIcon } from "@/components/ui/Dock";
+import { Dock, DockIcon } from "@/components/ui/dock";
+import { cn } from "@/lib/utils";
 
 export default function MyDock() {
   return (
-    <Dock className="sticky bottom-3 z-50" direction="middle">
+    <Dock
+      className={cn(
+        "sticky bottom-3 z-50 rounded-full p-2 pb-0 border-foreground shadow-2xl border-2 bg-primary text-background",
+      )}
+      direction="middle"
+    >
       <DockIcon>
         <Tooltip>
           <TooltipTrigger>

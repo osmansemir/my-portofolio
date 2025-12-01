@@ -4,13 +4,15 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import MyDock from "../components/Mydock";
 import Contact from "../components/Contact";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
     <main
       role="main"
-      className="relative text-foreground bg-background w-full pb-3 flex flex-col items-center"
+      className="relative w-full pb-3 flex flex-col items-center"
     >
+      <ModeToggle />
       <Hero />
       <About />
       <Skills />
