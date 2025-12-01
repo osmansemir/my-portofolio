@@ -2,7 +2,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/Tooltip";
+} from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/ui/Dock";
 
 export default function MyDock() {

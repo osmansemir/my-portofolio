@@ -1,5 +1,5 @@
-import SectionTitle from "@/components/SectionTitle";
-import { Button } from "./ui/Button";
+import SectionTitle from "./SectionTitle";
+import { Button } from "./ui/button";
 import ReactGA from "react-ga4";
 
 export default function Contact() {

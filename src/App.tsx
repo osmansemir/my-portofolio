@@ -1,9 +1,9 @@
-import "./App.css";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import { ThemeProvider } from "./components/theme-provider";
 
 export default function App() {
   useEffect(() => {
@@ -16,12 +16,14 @@ export default function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-      </Router>
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </ThemeProvider>
     </>
   );
 }
