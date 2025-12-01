@@ -2,7 +2,7 @@ import SectionTitle from "@/components/SectionTitle";
 import { Button } from "./ui/Button";
 import ReactGA from "react-ga4";
 
-function Contact() {
+export default function Contact() {
   const handleDownload = () => {
     ReactGA.event({
       category: "CV",
@@ -16,7 +16,7 @@ function Contact() {
     link.click();
   };
   return (
-    <section className="relative text-white flex flex-col justify-center items-center py-10 z-30 mb-20">
+    <section className="relative flex flex-col justify-center items-center py-10 z-30 mb-20">
       <SectionTitle>Contact</SectionTitle>
       <h3 className="text-3xl font-bold mb-2">Get In Touch</h3>
       <p className="mx-auto max-w-[600px] text-center text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -32,12 +32,21 @@ function Contact() {
       </p>
       <Button
         onClick={handleDownload}
+        variant="default"
         size="lg"
-        className="mt-4 text-foreground/90 cursor-pointer hover:bg-[#A42CD6]/90 bg-[#A42CD6]"
+        className="mt-4  cursor-pointer"
       >
         Download CV
+      </Button>
+      <Button variant="destructive" size="lg" className="mt-4  cursor-pointer ">
+        destructive
+      </Button>
+      <Button variant="primary" size="lg" className="mt-4  cursor-pointer ">
+        primary
+      </Button>
+      <Button variant="outline" size="lg" className="mt-4  cursor-pointer ">
+        outline
       </Button>
     </section>
   );
 }
-export default Contact;

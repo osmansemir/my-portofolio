@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/Tooltip";
 import { Dock, DockIcon } from "@/components/ui/Dock";
 
-function MyDock() {
+export default function MyDock() {
   return (
     <Dock className="sticky bottom-3 z-50" direction="middle">
       <DockIcon>
@@ -121,4 +121,3 @@ function MyDock() {
     </Dock>
   );
 }
-export default MyDock;

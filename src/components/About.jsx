@@ -1,11 +1,11 @@
 import SectionTitle from "./SectionTitle";
 
-function About() {
+export default function About() {
   return (
-    <section className="relative text-white flex justify-center items-center px-5 pb-10 z-30">
+    <section className="relative flex justify-center items-center px-5 pb-10 z-30">
       <div>
         <SectionTitle>About</SectionTitle>
-        <div className="prose md:prose-lg md:text-center text-foreground-muted">
+        <div className="prose md:prose-lg">
           <p className="">
             I’m Osman Semir, a self-taught full-stack web developer with a
             background in applied biology. I specialize in building efficient,
@@ -24,5 +24,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

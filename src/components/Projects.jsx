@@ -2,9 +2,9 @@ import ProjectCard from "@/components/ProjectCard";
 import SectionTitle from "@/components/SectionTitle";
 import { projects } from "@/data/projectsData";
 
-function Projects() {
+export default function Projects() {
   return (
-    <section className="text-white relative max-sm:px-5 py-10 z-30 flex flex-col">
+    <section className=" relative max-sm:px-5 py-10 z-30 flex flex-col w-7/10">
       <SectionTitle>Projects</SectionTitle>
       <h2 className="text-3xl text-center font-bold tracking-tighter mb-10 sm:text-5xl">
         Check out my latest work
@@ -17,5 +17,3 @@ function Projects() {
     </section>
   );
 }
-
-export default Projects;

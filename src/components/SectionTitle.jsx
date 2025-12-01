@@ -1,4 +1,4 @@
-function SectionTitle({ children }) {
+export default function SectionTitle({ children }) {
   return (
     <div className="my-4 flex justify-center ">
       <span className="bg-white rounded-lg">
@@ -7,4 +7,3 @@ function SectionTitle({ children }) {
     </div>
   );
 }
-export default SectionTitle;

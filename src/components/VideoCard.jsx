@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function VideoCard({ src, gif }) {
+export default function VideoCard({ src, gif }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -39,5 +39,3 @@ function VideoCard({ src, gif }) {
     </>
   );
 }
-
-export default VideoCard;

@@ -1,36 +1,36 @@
 import { Button } from "./ui/Button";
 import VideoCard from "./VideoCard";
 
-function ProjectCard({ project }) {
+export default function ProjectCard({ project }) {
   return (
     <>
       <div className="md:col-span-1 col-span-2">
         <div className="rounded-lg bg-card flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
           {project.video}
-          <div className="flex flex-col px-2">
-            <div className="space-y-1">
-              <h3 className="font-semibold tracking-tight mt-1 text-base">
+          <div className="flex flex-col px-3">
+            <div className="space-y-2">
+              <h3 className="font-bold tracking-tight mt-1 text-lg">
                 {project.title}
               </h3>
               <div className="hidden font-sans text-xs underline print:visible" />
-              <div className="prose max-w-full text-pretty font-sans text-xs text-foreground-muted dark:prose-invert">
+              <div className=" max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert">
                 <p>{project.desc}</p>
               </div>
             </div>
           </div>
-          <div className="text-pretty font-sans text-sm text-muted-foreground mt-auto flex flex-col px-2">
+          <div className="text-pretty font-sans text-sm text-muted-foreground mt-auto flex flex-col px-3">
             <div className="mt-2 flex flex-wrap gap-1">
               {project.tech?.map((item) => (
                 <div
                   key={item}
-                  className="inline-flex items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-700 text-foreground/80 hover:bg-gray-700/80 px-1 py-0 text-[10px]"
+                  className=" rounded-sm focus:ring-ring bg-secondary text-secondary-foreground px-2 py-1 text-xs/tight"
                 >
                   {item}
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex items-center pt-2 mt-2 mb-2 px-2 pb-2">
+          <div className="flex items-center pt-2 mt-2 mb-2 px-3 pb-2">
             <div className="flex flex-row flex-wrap items-start gap-1">
               {project.website && (
                 <Button asChild size="sm">
@@ -83,4 +83,3 @@ function ProjectCard({ project }) {
     </>
   );
 }
-export default ProjectCard;

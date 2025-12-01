@@ -1,14 +1,14 @@
-function Hero() {
+export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen min-h-100 relative flex justify-center items-center z-30 "
+      className=" min-h-100 relative flex justify-center items-center z-30 "
     >
-      <div>
-        <h1 className="inline-block max-sm:mb-8 text-foreground text-5xl font-bold tracking-tighter md:text-7xl">
+      <div className="flex flex-col gap-4">
+        <h1 className="inline-block max-sm:mb-8 text-5xl font-bold tracking-tighter md:text-7xl">
           Hi I'm Osman
         </h1>
-        <p className="text-foreground-muted inline-block max-w-[600px] md:text-xl">
+        <p className=" inline-block md:text-xl">
           Where logic meets creativity, crafting code with precision and
           purpose.
         </p>
@@ -16,5 +16,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;

@@ -17,7 +17,7 @@ function Skill({ skill }) {
   );
 }
 
-function Skills() {
+export default function Skills() {
   return (
     <section className="relative w-full">
       <SectionTitle>Skills and Teck Stack</SectionTitle>
@@ -41,13 +41,12 @@ function Skills() {
             <Skill key={skill.name} skill={skill} />
           ))}
         </Marquee>
-        <div className="from-[#020617] pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-        <div className="from-[#020617] pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+        <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+        <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
         {/* outer shadow */}
-        <div className="from-[#020617] pointer-events-none absolute inset-y-0 left-full w-5 bg-gradient-to-r"></div>
-        <div className="from-[#020617] pointer-events-none absolute inset-y-0 right-full w-5 bg-gradient-to-l"></div>
+        {/* <div className="from-[#020617] pointer-events-none absolute inset-y-0 left-full w-5 bg-gradient-to-r"></div> */}
+        {/* <div className="from-[#020617] pointer-events-none absolute inset-y-0 right-full w-5 bg-gradient-to-l"></div> */}
       </div>
     </section>
   );
 }
-export default Skills;
