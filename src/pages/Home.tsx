@@ -8,10 +8,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
-    <main
-      role="main"
-      className="relative w-full pb-3 flex flex-col items-center"
-    >
+    <main role="main" className="relative w-full flex flex-col items-center">
       <ModeToggle />
       <Hero />
       <About />

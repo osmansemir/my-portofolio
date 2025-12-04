@@ -10,7 +10,8 @@ export default function MyDock() {
   return (
     <Dock
       className={cn(
-        "sticky bottom-3 z-50 rounded-full p-2 pb-0 border-foreground shadow-2xl border-2 bg-primary text-background",
+        "sticky bottom-3 z-50 rounded-full mb-7 p-2 pb-0 border-foreground border-2 bg-primary text-background",
+        "shadow-xl",
       )}
       direction="middle"
     >

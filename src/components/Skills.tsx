@@ -1,18 +1,24 @@
 import SectionTitle from "@/components/SectionTitle";
 import { Marquee } from "@/components/ui/Marquee";
-import { skillsData } from "@/data/skillsData";
+import { skillsData1, skillsData2, skillsData3 } from "@/data/skillsData";
+import { cn } from "@/lib/utils";
 
-function Skill({ skill }) {
+type Skill = {
+  name: string;
+  icon: React.ReactNode;
+  skillColor?: string;
+};
+
+function Skill({ skill }: { skill: Skill }) {
   return (
     <div
-      className={
-        "text-black bg-white min-w-30 align-middle flex item-center px-3 py-2 rounded-lg "
-      }
+      className={cn(
+        "text-black bg-white min-w-20 align-middle flex item-center px-4 py-2 rounded-full border border-foreground dark:border-0 ",
+        skill.skillColor,
+      )}
     >
-      <span className="px-1 inline-block">{skill.icon}</span>
-      <span className={`bg-${skill.color} px-1 rounded-sm inline-block`}>
-        {skill.name}
-      </span>
+      <span className="pl-1 inline-block">{skill.icon}</span>
+      <span className={` px-1 rounded-sm inline-block`}>{skill.name}</span>
     </div>
   );
 }
@@ -23,7 +29,7 @@ export default function Skills() {
       <SectionTitle>Skills and Teck Stack</SectionTitle>
       <div className="relative">
         <Marquee pauseOnHover className="[--duration:40s] overflow-x-hidden">
-          {skillsData.map((skill) => (
+          {skillsData1.map((skill) => (
             <Skill key={skill.name} skill={skill} />
           ))}
         </Marquee>
@@ -32,12 +38,12 @@ export default function Skills() {
           pauseOnHover
           className="[--duration:40s] overflow-hidden"
         >
-          {skillsData.map((skill) => (
+          {skillsData2.map((skill) => (
             <Skill key={skill.name} skill={skill} />
           ))}
         </Marquee>
         <Marquee pauseOnHover className="[--duration:40s] overflow-hidden">
-          {skillsData.map((skill) => (
+          {skillsData3.map((skill) => (
             <Skill key={skill.name} skill={skill} />
           ))}
         </Marquee>
