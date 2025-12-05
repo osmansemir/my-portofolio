@@ -9,6 +9,9 @@ export default function VideoPlayer({
 }) {
   return (
     <MuxPlayer
+      autoPlay
+      loop
+      muted
       playbackId={playbackId}
       metadata={{
         video_id: video_id,
