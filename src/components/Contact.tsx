@@ -23,7 +23,7 @@ export default function Contact() {
         Want to reach out?{" "}
         <a
           className="text-bluish hover:underline"
-          href="mailto:osmanshek@gmail.com"
+          href="mailto:hello@osmansemir.com"
         >
           Send me an email
         </a>
