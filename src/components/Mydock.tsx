@@ -45,7 +45,7 @@ export default function MyDock() {
       <DockIcon>
         <Tooltip>
           <TooltipTrigger>
-            <a href="mailto:osmanshek@gmail.com">
+            <a href="mailto:hello@osmansemir.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
