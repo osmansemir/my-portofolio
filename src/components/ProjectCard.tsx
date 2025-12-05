@@ -20,10 +20,10 @@ export default function ProjectCard({
       <div className="isolate pt-5 px-5 aspect-video relative">
         <div className="relative">
           <div className="flex after:absolute after:aspect after:top-0 after:left-0 after:-z-10 after:bg-reddish/50 after:w-full after:h-full after:translate-1">
-            {project.playbackId && (
+            {project.playbackId && project.video_id && (
               <VideoPlayer
                 playbackId={project.playbackId}
-                videoId={project.video_id}
+                video_id={project.video_id}
               />
             )}
           </div>

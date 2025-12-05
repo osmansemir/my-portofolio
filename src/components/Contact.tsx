@@ -32,7 +32,7 @@ export default function Contact() {
       </p>
       <div className="relative isolate mt-6">
         <Button
-          // onClick={handleDownload}
+          onClick={handleDownload}
           size="lg"
           className="font-bold hover:bg-bluish text-xl text-foreground border-0 dark:text-background cursor-pointer bg-bluish dark:border-0 active:translate-1 z-10"
         >

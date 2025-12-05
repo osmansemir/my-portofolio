@@ -8,7 +8,7 @@ export default function Projects() {
     <section
       className={cn(
         " relative z-30 flex flex-col w-full ",
-        "px-5 py-10 sm:w-8/10 md:w-9/10 lg:w-7/10",
+        "px-5 min-[500px]:px-20 sm:px-5  py-10 sm:w-8/10 md:w-9/10 lg:w-7/10",
       )}
     >
       <SectionTitle>Projects</SectionTitle>

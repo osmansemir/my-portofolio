@@ -3,10 +3,10 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./theme-provider";
 import { cn } from "@/lib/utils";
-import { useIsMobile } from "@/hooks/use-mobile";
+// import { useIsMobile } from "@/hooks/use-mobile";
 
 export function ModeToggle({ className }: { className?: string }) {
-  const isMobile = useIsMobile();
+  // const isMobile = useIsMobile();
   const { setTheme, theme } = useTheme();
   const handleClick = () => {
     const toTheme = theme === "light" ? "dark" : "light";

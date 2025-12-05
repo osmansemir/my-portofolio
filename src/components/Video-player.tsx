@@ -11,7 +11,7 @@ export default function VideoPlayer({
     <MuxPlayer
       playbackId={playbackId}
       metadata={{
-        video_id: { video_id },
+        video_id: video_id,
         video_title: "Mindvale App",
         // viewer_user_id: "user-id-007",
       }}
